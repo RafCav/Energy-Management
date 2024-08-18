@@ -16,9 +16,11 @@ def screen_home():
     # Send to the page after clicking the button
     if button_register:
         st.session_state['screen'] = 'register'
+        st.rerun()
 
     if button_projection:
         st.session_state['screen'] = 'projection'
+        st.rerun()
 
 
 def screen_register():
@@ -29,6 +31,7 @@ def screen_register():
     button_home = st.button('Voltar')
     if button_home:
         st.session_state['screen'] = 'home'
+        st.rerun()
 
 
 def screen_projection():
@@ -39,6 +42,7 @@ def screen_projection():
     button_home = st.button('Voltar')
     if button_home:
         st.session_state['screen'] = 'home'
+        st.rerun()
 
 
 # Inicializando a tela padrão na sessão

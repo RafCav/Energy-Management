@@ -21,7 +21,7 @@ def get_data():
 st.title('Projeção da Conta de Energia')
 
 with st.form(key='projection_form'):
-    kwh_current = st.number_input('Digite o kWh consumido:', format='%d', step=1)
+    kwh_current = st.number_input('Digite o kWh atual:', format='%d', step=1)
     submit_button = st.form_submit_button(label='Enviar')
 
     if submit_button:
